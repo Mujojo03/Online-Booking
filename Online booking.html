@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Booking Hotel Website</title>
+  <style>
+    body {
+      background-color: beige;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #101010;
+      color: #22c7f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #1bbbec;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #050505;
+      padding: 5px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+      width: 200px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #0b0b0b;
+      color: #51b3f0;
+      padding: 10px 20px;
+      margin: top 30px;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #0b0b0b;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .service{
+      border: 1px solid;
+      width: 40%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Online Booking Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Book Your Reservation</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <br>
+      <label for="service">Service:</label>
+      <div class="service">
+        <select name="service" required>
+          <option value="">Select a service</option>
+          <option value="haircut">Haircut</option>
+          <option value="massage">Massage</option>
+          <option value="facial">Facial</option>
+        </select>
+      </div>
+      <br>
+      <div class="submit_button">
+        <input type="submit" value="Book Now">
+      </div>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 Online Booking Website. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
